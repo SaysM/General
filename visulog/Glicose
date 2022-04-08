@@ -1,0 +1,21 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/03/2022
+// Seção de Declarações 
+var
+   Mglicose : real
+inicio
+      escreva("Digite a medida da glicose: ")
+      leia(Mglicose)
+
+      se Mglicose <= 100 entao
+        escreval("Classificacao: normal ")
+      senao
+          se Mglicose <= 140 entao
+             escreval("Classificacao: elevado")
+          senao
+               escreval("Classificacao: diabetes")
+          fimse
+     fimse
+fimalgoritmo

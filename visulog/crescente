@@ -1,0 +1,23 @@
+algoritmo "Crescente"
+
+var
+   x,y : real
+inicio
+      Escreval("Digite dois numeros: ")
+      leia(x)
+      leia(y)
+      
+      Enquanto x <> y faca
+               se x < y entao
+                  Escreval("Crescente!")
+                  Escreval("Digite outros dois numeros")
+                  leia(x)
+                  leia(y)
+               senao
+                  Escreval("Decrescente!")
+                  Escreval("Digite outros dois numeros")
+                  leia(x)
+                  leia(y)
+               fimse
+      fimenquanto
+fimalgoritmo

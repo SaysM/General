@@ -1,0 +1,28 @@
+algoritmo "media_idades"
+
+var
+ x, y, cont: inteiro
+ media: real
+inicio
+        Escreval("Digite as idades: ")
+        y <- 0
+        cont <- 0
+        leia(x)
+        
+        Se x < 0 entao
+           escreval("Impossivel calcular")
+        fimse
+        
+        Enquanto x > 0 faca
+                 y <- (x + y)
+                 cont <- (cont + 1)
+                 
+                 leia(x)
+        fimenquanto
+
+        Se x < 0 entao
+           media <- (y / cont)
+           escreval(media:5:2)
+        fimse
+        
+fimalgoritmo

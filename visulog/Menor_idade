@@ -1,0 +1,28 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/03/2022
+// Seção de Declarações 
+var
+   a, b, c, menor : real
+inicio
+      Escreva("Primeiro valor: ")
+      leia(a)
+      escreva("Segundo valor: ")
+      leia(b)
+      Escreva("Terceiro valor: ")
+      leia(c)
+      
+      se (a < b) e (a < c) entao
+         menor <- a
+         escreva("MENOR =  ", menor)
+      senao
+           se (b < a) e (b < c) entao
+              menor <- b
+              escreva("MENOR = ", menor)
+           senao
+                menor <- c
+                escreva("MENOR = ", menor)
+           fimse
+      fimse
+fimalgoritmo

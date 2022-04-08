@@ -1,0 +1,19 @@
+algoritmo "snotas"
+
+var
+   nota1, nota2, notaF: real
+inicio
+      escreva("Digite a primeira nota: ")
+      leia(nota1)
+      escreva ("Digite a segunda nota: ")
+      leia(nota2)
+      notaF <- (nota1 + nota2) / 2
+      
+      se notaF < 60 entao
+         escreval("Nota FInal: ", notaF:2:2)
+         escreval("Reprovado")
+      senao
+           escreval("Nota FInal: ", notaf:2:2)
+      fimse
+           
+fimalgoritmo

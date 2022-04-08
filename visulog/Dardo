@@ -1,0 +1,23 @@
+algoritmo "semnome"
+
+var
+  dis1, dis2, dis3, maiorD: Real
+inicio
+      Escreval("Digite as tres distancias:")
+      leia(dis1)
+      leia(dis2)
+      Leia(dis3)
+
+      se (dis1 > dis2) e (dis1 > dis3) entao
+         maiorD <- dis1
+         escreval("Maior distancia = ", maiorD)
+      senao
+           se dis2 > dis3 entao
+              maiorD <- dis2
+              escreval("Maior distancia = ", maiorD)
+           senao
+                maiorD <- dis3
+                escreval("Maior distancia = ", maiorD)
+           fimse
+      fimse
+fimalgoritmo

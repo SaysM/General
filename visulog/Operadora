@@ -1,0 +1,22 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/03/2022
+// Seção de Declarações 
+var
+   minutos, minutosP, Vparcial, Vtotal: real
+   
+inicio
+      escreva("Digite a quantidade de minutos: ")
+      leia(minutos)
+      
+      se minutos > 100 entao
+         minutosP <- (minutos - 100)
+         Vparcial <- (minutosP * 2)
+         Vtotal <- (Vparcial + 50)
+         escreval ("Valor a pagar: R$", Vtotal:3:2)
+      senao
+          Vtotal <- 50.00
+          escreval ("Valor a pagar: R$", Vtotal:3:2)
+      fimse
+fimalgoritmo

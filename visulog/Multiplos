@@ -1,0 +1,25 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 22/03/2022
+// Seção de Declarações 
+var
+   num1, num2 : Inteiro
+   tentativa1, tentativa2 : inteiro
+inicio
+      Escreval ("Digite dois numeros inteiros: ")
+      Leia(num1)
+      leia(num2)
+      tentativa1 <- (num1 mod num2)
+      tentativa2 <- (num2 mod num1)
+      
+      se tentativa1 = "0" entao
+         escreval("São multiplos")
+      senao
+           se tentativa2 = "0" entao
+              escreval("São multiplos")
+           senao
+                escreval("Não são multiplos")
+           fimse
+      fimse
+fimalgoritmo

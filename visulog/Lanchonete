@@ -1,0 +1,60 @@
+algoritmo "lanchonete"
+
+var
+  p1, p2, p3, p4, p5: real
+  Qcomprada : real
+  Vtotal : real
+  CodigoP : Inteiro
+inicio
+      Escreval("Codigo do produto comprado: ")
+      leia(CodigoP)
+      se CodigoP = 1 entao
+
+         p1 <- 5
+         escreval("Quantidade Comprada: ")
+         leia(Qcomprada)
+         Vtotal <- (p1 * Qcomprada)
+         Escreval("Valor a pagar: R$ ", Vtotal:5:2)
+
+      senao
+           se CodigoP = 2 entao
+
+              p2 <- 3.50
+              escreval("Quantidade Comprada: ")
+              leia(Qcomprada)
+              Vtotal <- (p2 * Qcomprada)
+              Escreval("Valor a pagar: R$ ", Vtotal:5:2)
+
+           senao
+                 se CodigoP = 3 entao
+
+                    p3 <- 4.80
+                    escreval("Quantidade Comprada: ")
+                    leia(Qcomprada)
+                    Vtotal <- (p3 * Qcomprada)
+                    Escreval("Valor a pagar: R$ ", Vtotal:5:2)
+
+                 senao
+                    se CodigoP = 4 entao
+                    p4 <- 8.90
+                    escreval("Quantidade Comprada: ")
+                    leia(Qcomprada)
+                    Vtotal <- (p4 * Qcomprada)
+                    Escreval("Valor a pagar: R$ ", Vtotal:5:2)
+
+                    senao
+                          se CodigoP = 5 entao
+                          p5 <- 8.90
+                          escreval("Quantidade Comprada: ")
+                          leia(Qcomprada)
+                          Vtotal <- (p5 * Qcomprada)
+                          Escreval("Valor a pagar: R$ ", Vtotal:5:2)
+
+                          senao
+                          escreval("CODIGO INCORRETO")
+                          fimse
+                    fimse
+                 fimse
+           fimse
+      fimse
+fimalgoritmo
