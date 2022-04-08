@@ -1,0 +1,47 @@
+algoritmo "Aumento"
+
+
+var
+     salario, salarioN,aumento : real
+inicio
+      Escreval("Digite o salario da pessoa: ")
+      leia(salario)
+
+
+      se salario <= 1000 entao
+         salarioN <- salario + (salario * 20/100)
+         escreval("Novo salario = R$ ", salarioN:8:2)
+         aumento <- (salario * 20/100)
+         escreval("Aumento = R$ ", aumento:8:2)
+         escreva("Porcentagem = 20%")
+      senao
+      
+           se salario <= 3000 entao
+              salarioN <- salario + (salario * 15/100)
+              escreval("Novo salario = R$ ", salarioN:8:2)
+              aumento <- (salario * 15/100)
+              escreval("Aumento = R$ ", aumento:8:2)
+              escreva("Porcentagem = 15%")
+              
+           senao
+           
+                se salario <= 8000 entao
+                   salarioN <- salario + (salario * 10/100)
+                   aumento <- (salario * 10/100)
+                   escreval("Novo salario = R$ ", salarioN:8:2)
+                   escreva("Porcentagem = 10%")
+                   
+                senao
+                
+                     se salario > 8000 entao
+                        salarioN <- salario + (salario * 5/100)
+                        aumento <- (salario * 5/100)
+                        escreval("Novo salario = R$ ", salarioN:8:2)
+                        escreval("Aumento = R$ ", aumento:8:2)
+                        escreva("Porcentagem = 5%")
+                     senao
+                     fimse
+                fimse
+           fimse
+      fimse
+fimalgoritmo
