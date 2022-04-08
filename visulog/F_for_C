@@ -1,0 +1,31 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 22/03/2022
+// Seção de Declarações 
+var
+   Ntemp : caractere
+   celcius, fahren : real
+   
+inicio
+      escreval("Voce vai digitar a temperatura em qual escala (C/F)? ")
+      leia(Ntemp)
+      
+      se Ntemp = "C" entao
+         escreval("Digite a temperatura em Celsius: ")
+         leia(celcius)
+         fahren <- (9/5 * Celcius) + 32
+         escreval("Temperatura equivalente em Fahrenheit: ", fahren:4:2)
+      senao
+      fimse
+      
+      se Ntemp = "F" entao
+         escreval("Digite a temperatura em Fahrenheit: ")
+         leia(fahren)
+         celcius <- 5/9 * (fahren - 32)
+         escreval("Temperatura equivalente em Celsius: ", celcius:4:2)
+      senao
+      fimse
+      
+      
+fimalgoritmo

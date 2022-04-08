@@ -1,0 +1,27 @@
+algoritmo "semnome"
+
+var
+   Qcomprada : inteiro
+   precoP: real
+   Drecebido: real
+   troco:real
+   DinheiroI, valorT : real
+inicio
+      escreva("Preço unitario do produto: ")
+      leia(precoP)
+      escreva("Quantidade comprada: ")
+      leia(Qcomprada)
+      escreva("dinheiro recebido: ")
+      Leia(Drecebido)
+
+      valorT <- precoP * Qcomprada
+      troco <- Drecebido - (precoP * Qcomprada)
+      
+      se Drecebido < ValorT entao
+         DinheiroI <- (ValorT - Drecebido)
+         escreval("DINHEIRO INSUFICIENTE. FALTAM ", DinheiroI:8:2 ,  " REAIS ")
+      senao
+           Escreva("Troco = ", troco:4:2)
+      Escreva
+      fimse
+fimalgoritmo

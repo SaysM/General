@@ -1,0 +1,22 @@
+algoritmo "Terreno"
+
+var
+   largura, comprimento: real
+   area: real
+   perimetro : real
+   preco : real
+   precoT : real
+
+inicio
+      escreval("Digite a largura e o comprimento do terreno: ")
+      leia (largura)
+      leia (comprimento)
+      escreval("Digite o preço por metro quadrado: ")
+      leia(preco)
+      perimetro <- (largura * 2) + (comprimento * 2)
+      area <- largura * comprimento
+      precoT <- (preco * area)
+      escreval("Area do terreno = ",area:6:2)
+      escreval("preço do terreno = ", precoT:8:2)
+
+fimalgoritmo

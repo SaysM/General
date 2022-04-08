@@ -1,0 +1,21 @@
+algoritmo "soma"
+// Função :
+// Autor :
+// Data : 15/03/2022
+// Seção de Declarações 
+var
+        x,y : real
+        soma : real
+        
+inicio
+      Escreva("Digite o valor de x: ")
+      leia(x)
+      escreval
+      Escreva("Digite o valor de y: ")
+      leia(y)
+      escreval
+
+      soma <- (x + y)
+      
+      escreval("Soma = ",soma)
+fimalgoritmo
