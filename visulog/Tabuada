@@ -1,0 +1,13 @@
+algoritmo "Tabuada"
+
+var
+ N, i, x, mult : inteiro
+inicio
+      Escreva("Deseja a tabuada para qual valor? ")
+      leia(N)
+
+      Para i de 1 ate 10 faca
+           mult <- N * i
+           escreval(N, " x ", i ," = ", mult)
+      fimpara
+fimalgoritmo

@@ -1,0 +1,16 @@
+algoritmo "Sequencia_Impares"
+
+var
+ x, i: inteiro
+inicio
+   Escreva("Digite o valor de X: ")
+   Leia(x)
+   
+   para i de 1 ate x faca
+        Se i % 2 <> 0 entao
+           Escreval(i)
+        fimse
+   fimpara
+   
+   
+fimalgoritmo

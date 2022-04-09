@@ -1,0 +1,33 @@
+algoritmo "Pares_consecutivos"
+
+var
+   x, a, b, c, d, f : Inteiro
+   Soma : real
+inicio
+
+  escreva("Digite um numero inteiro: ")
+  leia(x)
+
+  Enquanto x <> 0 faca
+  
+           se x % 2 = 0 entao
+              a <- x
+               b <- a + 2
+               c <- b + 2
+               d <- c + 2
+               f <- d + 2
+           senao
+              a <- x + 1
+              b <- a + 2
+              c <- b + 2
+              d <- c + 2
+              f <- d + 2
+           fimse
+           Soma <- (a + b + c + d + f)
+           Escreval("SOMA = ", Soma)
+           escreva("Digite um numero inteiro: ")
+           leia(x)
+  Fimenquanto
+           
+  
+fimalgoritmo

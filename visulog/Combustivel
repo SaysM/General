@@ -1,0 +1,40 @@
+algoritmo "Combustivel"
+
+var
+   Cod, cod1, cod2, cod3: Inteiro
+   
+inicio
+      Escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+      Leia(Cod)
+      cod1 <- 0
+      cod2 <- 0
+      cod3 <- 0
+      
+      enquanto Cod <> 4 faca
+               se Cod = 1 entao
+                  cod1 <- (cod1 + 1)
+                  Escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+                  Leia(Cod)
+               senao
+                    se Cod = 2 entao
+                       cod2 <- cod2 + 1
+                       Escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+                       Leia(Cod)
+                    senao
+                         se Cod = 3 entao
+                            cod3 <- cod3 + 1
+                            Escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+                            Leia(Cod)
+                         senao
+                              Escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+                              Leia(Cod)
+                         fimse
+                    fimse
+               fimse
+      Fimenquanto
+      
+      Escreval("MUITO OBRIGADO")
+      Escreval("Alcool: ", cod1)
+      Escreval("Gasolina: ", cod2)
+      Escreva("Diesel: ", cod3)
+fimalgoritmo
