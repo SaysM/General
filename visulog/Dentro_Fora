@@ -1,0 +1,29 @@
+algoritmo "dentro_fora"
+
+var
+  i, Fora, Dentro, y: Inteiro
+  x: inteiro
+inicio
+      Escreva("Quantos numeros voce vai digitar? ")
+      leia(x)
+      Dentro <- 0
+      Fora <- 0
+      
+      Para i de 1 ate (x) faca
+      
+           Escreva("Digite um numero: ")
+           leia(y)
+           
+           Se (y >= 10) e (y <= 20) entao
+              Dentro <- (Dentro + 1)
+
+           senao
+                Fora <- (Fora + 1)
+
+           fimse
+           
+      fimpara
+      
+      Escreval(Dentro," DENTRO ")
+      Escreval(Fora," Fora ")
+fimalgoritmo
