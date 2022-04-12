@@ -1,0 +1,52 @@
+algoritmo "experiencias"
+
+var
+   i, Qcasos, Qcobaias, SomaC, SomaR, SomaS :  inteiro
+   Soma, PerC, PerS, PerR: real
+   Tcobaias : caractere
+   
+inicio
+      Escreva("Quantos casos de teste serao digitados? ")
+      Leia(Qcasos)
+      Soma <- 0
+      SomaC <- 0
+      SomaS <- 0
+      SomaR <- 0
+      
+      para i de 1 ate Qcasos faca
+      
+           Escreva("Quantidade de cobaias: ")
+           leia(Qcobaias)
+           Soma <- (Soma + Qcobaias)
+           Escreva("Tipo de cobaia: ")
+           Leia(Tcobaias)
+           
+           Se Tcobaias = "C" entao
+              SomaC <- (SomaC + Qcobaias)
+           senao
+                Se Tcobaias = "R" entao
+                   SomaR <- (SomaR + Qcobaias)
+                senao
+                     se Tcobaias = "S" entao
+                        SomaS <- (SomaS + Qcobaias)
+                     senao
+                          Escreva("ERROU")
+                     fimse
+                fimse
+           fimse
+           
+      fimpara
+      
+      PerC <- (SomaC / Soma) * 100
+      PerR <- (SomaR / Soma) * 100
+      PerS <- (SomaS / Soma) * 100
+      Escreval("////")
+      Escreval("Relatorio Final: ")
+      Escreval("Total: ", Soma  )
+      Escreval("Total de Coelhos: ", SomaC )
+      Escreval("Total de Ratos: ", SomaR)
+      Escreval("Total de Sapos: ", SomaS)
+      Escreval("Percentual de Coelhos: ", PerC:5:2)
+      Escreval("Percentual de Ratos: ", PerR:5:2)
+      Escreval("Percentual de Sapos: ", PerS:5:2)
+fimalgoritmo

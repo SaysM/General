@@ -1,0 +1,34 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 12/04/2022
+// Seção de Declarações 
+var
+   x, y, Di : real
+   N, i : inteiro
+
+inicio
+      Escreva("Quantos casos voce vai digitar? ")
+      leia(N)
+      
+      Para i de 1 ate N faca
+      
+          escreva("Entre com o numerador: ")
+          leia(x)
+          escreva("Entre com o numerador: ")
+          leia(y)
+          
+
+          Se y <> 0 entao
+
+             Di <- (x / y)
+             escreval("Divisao = ", Di)
+             
+          senao
+          
+               Escreval("Divisão impossivel")
+               
+          fimse
+      fimpara
+
+fimalgoritmo

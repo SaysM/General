@@ -1,0 +1,29 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 12/04/2022
+// Seção de Declarações 
+var
+   N, i, x : inteiro
+   media, P5, P2, P3 : Real
+inicio
+      Escreva("Quantos casos voce vai digitar? ")
+      leia(N)
+      
+      para i de 1 ate N faca
+
+           Escreval("Digite tres numeros: ")
+           Leia(P2)
+           leia(P3)
+           leia(P5)
+           P2 <- (P2 * 2)
+           P3 <- (P3 * 3)
+           P5 <- (P5 * 5)
+           
+           Media <- (P2 + P3 + P5) / 10
+           
+           Escreval("Media = ", Media)
+
+      fimpara
+      
+fimalgoritmo

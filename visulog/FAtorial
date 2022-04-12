@@ -1,0 +1,19 @@
+algoritmo "Fatorial"
+
+var
+   FN : real
+   N, i : inteiro
+inicio
+      Escreva("Digite o valor de N: ")
+      leia(N)
+
+      Fn <- 1
+      
+      para i de 1 ate N faca
+
+           Fn <- (Fn * i)
+
+      fimpara
+      
+      Escreval("Fatorial = ", Fn)
+fimalgoritmo
