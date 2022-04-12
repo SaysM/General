@@ -1,0 +1,35 @@
+algoritmo "semnome"
+
+var
+   i, N  : inteiro
+   x : real
+inicio
+    escreva("Quantos numeros voce vai digitar? ")
+    leia(N)
+    
+    para i de 1 ate N faca
+    
+         Escreva("Digite um numero: ")
+         leia(x)
+         
+         se (x > 0) e (x % 2 = 0) entao
+            Escreval("Par Positivo")
+         senao
+              se (x > 0) e (x % 2 <> 0) entao
+                 Escreval("Impar Positivo")
+              senao
+                  se (x < 0) e (x % 2 <> 0) entao
+                     Escreval("Par Negativo")
+                  senao
+                      se (x < 0) e (x % 2 <> 0) entao
+                         Escreval("Impar Negativo")
+                      senao
+                           Escreval(Nulo)
+                      fimse
+                  fimse
+              fimse
+         fimse
+    Fimpara
+
+
+fimalgoritmo
