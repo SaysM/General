@@ -1,0 +1,31 @@
+algoritmo "Negativos"
+// Função :
+// Autor :
+// Data : 13/04/2022
+// Seção de Declarações 
+var
+   i, x, N : inteiro
+   Vet: vetor [0..10] de real
+   
+inicio
+      Escreva("Quantos numeros voce vai digitar? ")
+      Leia(N)
+      
+      para i de 0 ate N-1 faca
+           Escreva("Digite um numero: ")
+           Leia(x)
+           Vet[i] <- x
+           
+      fimpara
+      
+      Escreval
+      Escreval("NUMEROS NEGATIVOS:")
+      
+      para i de 0 ate N-1 faca
+           Se vet[i] < 0 entao
+              Escreval(vet[i])
+           senao
+           fimse
+      fimpara
+      
+fimalgoritmo

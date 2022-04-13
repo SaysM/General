@@ -1,0 +1,32 @@
+algoritmo "maior_posicao"
+
+var
+N, i: inteiro
+Maior : real
+Vet : vetor [0..9] de Real
+Pmaior : vetor [0..9] de Real
+inicio
+
+      Escreva("Quanto numeros voce vai digitar? ")
+      Leia(N)
+      vet[0] <- 0
+      
+      Para i de 1 ate N faca
+
+           Escreva("Digite um numero: ")
+           leia(Vet[i])
+           Pmaior[i] <- i
+           
+           se (Vet[i] > Vet[i-1]) entao
+              Maior <- Vet[i]
+
+           senao
+           fimse
+           
+      fimpara
+           
+      Escreval()
+      
+      Escreval("MAIOR VALOR = ", maior)
+
+fimalgoritmo

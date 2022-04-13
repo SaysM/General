@@ -1,0 +1,36 @@
+algoritmo "soma_vetor"
+// Função :
+// Autor :
+// Data : 13/04/2022
+// Seção de Declarações 
+var
+N, i : inteiro
+vet : vetor [0..9] de Real
+Media, x, Soma : Real
+inicio
+      Escreva("Quantos numeros voce vai digitar? ")
+      Leia(N)
+      Soma <- 0
+
+      para i de 0 ate N-1 faca
+           Escreva("Digite um numero: ")
+           leia(x)
+           vet[i] <- x
+           Soma <- (Soma + x)
+      fimpara
+      
+      Escreval
+      
+      Escreva("Valores = ")
+      
+      para i de 0 ate N-1 faca
+           Escreva(vet[i]:2:1, " ")
+      fimpara
+      
+      Media <- (Soma / N)
+
+      Escreval()
+      
+      Escreval("Soma = ", Soma:4:2)
+      Escreval("Media = ", Media:4:2)
+fimalgoritmo

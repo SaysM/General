@@ -1,0 +1,25 @@
+algoritmo "N_Digitados"
+
+var
+i, N, x : inteiro
+vet : vetor [0..9] de real
+inicio
+      Escreva("Quantos numeros voce vai digitar?")
+      Leia(N)
+
+      
+      Para i de 0 ate N-1 faca
+           escreva("Escreva um numero: ")
+           leia(x)
+           vet[i] <- x
+           
+      fimpara
+      
+      Escreval()
+      Escreval("Numeros Digitados:")
+      
+      para i de 0 ate n-1 faca
+           Escreval(vet[i])
+      
+       fimpara
+fimalgoritmo
