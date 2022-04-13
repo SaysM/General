@@ -1,0 +1,47 @@
+algoritmo "alturas"
+
+var
+i, n, cont : inteiro
+Nome : vetor [0..9] de Caractere
+Menor : vetor [0..9] de Caractere
+Idade : vetor [0..9] de Inteiro
+Altura : vetor [0..9] de Real
+AMedia, ASoma, PMenor : real
+inicio
+
+  Escreva("Quantas pessoas serao digitadas? ")
+  Leia(N)
+  ASoma <- 0
+  cont <- 0
+  para i de 0 ate N-1 faca
+  
+       Escreval("Dados da ", i+1,"a Pessoa:")
+       Escreva("Nome: ")
+       Leia(Nome[i])
+       Escreva("Idade: ")
+       Leia(Idade[i])
+       Escreva("Altura: ")
+       Leia(Altura[i])
+       
+       se Idade[i] < 16 entao
+          Menor[i] <- Nome[i]
+          cont <- (cont + 1)
+       fimse
+
+       ASoma <- (Altura[i] + ASoma)
+       
+  Fimpara
+  
+  PMenor <- (cont / N) * 100
+  Amedia <- (Asoma / N)
+  
+  Escreval()
+  
+  Escreval("Altura Média: ", Amedia:4:2)
+  Escreval("Pessoas com menos de 16 anos: ", PMenor:4:1)
+
+  Para i de 0 ate cont-1 faca
+       Escreval(Menor[i])
+  fimpara
+  
+fimalgoritmo
