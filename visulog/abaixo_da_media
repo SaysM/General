@@ -1,0 +1,34 @@
+algoritmo "abaixo_da_media"
+// Função :
+// Autor :
+// Data : 18/04/2022
+// Seção de Declarações 
+var
+N, i : inteiro
+Soma : Real
+Vet : vetor [0..9] de Real
+
+inicio
+
+      Escreva("Quantos elementos vai ter o vetor? ")
+      Leia(N)
+      
+      para i de 0 ate N-1 faca
+           escreva("Digite um numero: ")
+           leia(vet[i])
+           Soma <- (Soma + vet[i])
+      fimpara
+      
+      Escreval("Media do vetor = ", (Soma / N))
+      
+      Escreval("ELEMENTOS ABAIXO DA MEDIA: ")
+      
+      para i de 0 ate N-1 faca
+           se (vet[i] < Soma / N) entao
+              escreval(vet[i])
+           senao
+           fimse
+      fimpara
+      
+      
+fimalgoritmo

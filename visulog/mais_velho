@@ -1,0 +1,37 @@
+algoritmo "mais_velho"
+// Função :
+// Autor :
+// Data : 18/04/2022
+// Seção de Declarações 
+var
+   i, N : INteiro
+   Maior : Caractere
+   Nome : vetor [0..9] de Caractere
+   Idade : vetor [0..9] de Inteiro
+inicio
+      Escreva("Quantas pessoas voce vai digitar?")
+      leia(N)
+      
+      para i de 0 ate N-1 faca
+      
+           Escreval("Dados da ", (i+1),"a pessoa: ")
+           Escreva("Nome: ")
+           Leia(Nome[i])
+           Escreva("Idade: ")
+           Leia(Idade[i])
+           
+      fimpara
+
+      Para i de 1 ate N-1 faca
+
+           Se (Idade[i] > Idade[i-1]) entao
+              Maior <- Nome[i]
+           senao
+
+           fimse
+
+      fimpara
+      
+      Escreval("Pessoa mais velha: ", Maior )
+
+fimalgoritmo

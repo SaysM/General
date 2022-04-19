@@ -1,0 +1,39 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/04/2022
+// Seção de Declarações 
+var
+   i,N : inteiro
+   vetA: vetor [0..9] de Inteiro
+   Soma: vetor [0..9] de Inteiro
+   vetB: vetor [0..9] de Inteiro
+inicio
+
+      Escreva("Quantos valores vai ter cada vetor? ")
+      Leia(N)
+      
+      Escreval("Digite os valores do vetor A: ")
+      
+      para i de 0 ate N-1 faca
+           leia(vetA[i])
+      fimpara
+      
+      Escreval("Digite os valores do vetor B: ")
+      
+      para i de 0 ate N-1 faca
+           leia(vetB[i])
+      fimpara
+      
+      
+      para i de 0 ate N-1 faca
+          Soma[i] <- (VetA[i] + VetB[i])
+      fimpara
+      
+      Escreval("VETOR RESULTANTE: ")
+      
+      para i de 0 ate N-1 faca
+           Escreval(Soma[i])
+      fimpara
+
+fimalgoritmo

@@ -1,0 +1,39 @@
+algoritmo "numeros_pares"
+var
+N, i, X, cont : Inteiro
+Vet : Vetor [0..9] de Inteiro
+Numpar : Vetor [0..9] de Inteiro
+
+inicio
+      Escreva("Quantos numeros voce vai digitar? ")
+      leia(N)
+      cont <- 0
+      
+      para i de 0 ate N-1 faca
+      
+           Escreva("Digite um numero: ")
+           leia(vet[i])
+      fimpara
+      
+       Escreval("         ")
+
+       Escreval("NUMEROS PARES: ")
+
+       para i de 0 ate N-1 faca
+       
+              se (vet[i] % 2 = 0) entao
+              
+                 Escreva(vet[i], " ")
+                 cont <- cont + 1
+
+              senao
+              fimse
+
+       fimpara
+
+       Escreval("       ")
+
+       Escreval("Quantidade de pares = ", cont)
+       
+           
+fimalgoritmo

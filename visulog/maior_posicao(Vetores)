@@ -1,0 +1,38 @@
+algoritmo "maior_posicao"
+// Função :
+// Autor :
+// Data : 18/04/2022
+// Seção de Declarações 
+var
+i, N, posi : inteiro
+Maior : Real
+Vet : vetor [0..9] de Real
+
+
+inicio
+
+      Escreva("Quanto numeros voce vai digitar? ")
+      Leia(N)
+      posi <- 0
+      vet[0] <- 0
+      
+      Para i de 1 ate N faca
+           Escreva("Digite um numero: ")
+           leia(vet[i])
+           
+           se vet[i] > vet[i - 1] entao
+              Maior <- vet[i]
+              posi <- i
+           senao
+           fimse
+      fimpara
+      
+      Escreval()
+      
+      Escreval("Maior Valor = ", Maior)
+      Escreval("Posição do maior Valor = ", (posi - 1))
+      
+      
+      
+      
+fimalgoritmo
