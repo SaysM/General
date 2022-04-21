@@ -1,0 +1,84 @@
+algoritmo "comerciante"
+
+var
+Baixo_Dez, Entre_Dez_Vinte, Acima_Vinte, Compra_Total, Total_Venda, Lucro, Lucro_Total, Porc_Lucro : Real
+
+i, N : inteiro
+
+NomeP: Vetor [0..9] de Caractere
+PrecoCompra: Vetor [0..9] de Real
+PrecoVenda: Vetor [0..9] de Real
+
+
+
+inicio
+
+      Escreval("Serao digitados dados de quantos produtos? ")
+      Leia(N)
+      
+      Compra_Total <- 0
+      Total_Venda <- 0
+      
+      //Entrada de produtos
+      
+      Para i de 0 ate N-1 faca
+
+
+             Escreval("Produto ", i + 1,":")
+             Escreva("Nome: ")
+             Leia(NomeP[i])
+             Escreva("Preço da compra: ")
+             Leia(PrecoCompra[i])
+             Escreva("Preço da venda: ")
+             Leia(PrecoVenda[i])
+             
+             Compra_Total <- Compra_Total + PrecoCompra[i]
+             Total_Venda <- Total_Venda +  PrecoVenda[i]
+             
+             
+      Fimpara
+      
+      Lucro <- 0
+      Porc_Lucro <- 0
+      Baixo_Dez <- 0
+      Entre_Dez_Vinte <- 0
+      Acima_Vinte <- 0
+      
+
+      para i de 0 ate N-1 faca
+      
+         Lucro   <- PrecoVenda[i] - PrecoCompra[i]
+      
+         Porc_Lucro <- (lucro * 100 ) / PrecoCompra[i]
+      
+         Se Porc_Lucro < 10 entao
+
+            Baixo_Dez <- Baixo_Dez + 1
+
+         senao
+         
+              Se (Porc_Lucro > 10) e (Porc_Lucro < 20) entao
+
+                 Entre_Dez_Vinte <- Entre_Dez_Vinte + 1
+                 
+              senao
+
+                   Acima_Vinte <- Acima_Vinte + 1
+                   
+              fimse
+         fimse
+         
+      Fimpara
+      
+      //Saida do Relatorio
+      
+      
+      Escreval("RELATORIO: ")
+      escreval("Lucro abaixo de 10%: ", Baixo_Dez)
+      Escreval("Lucro entre 10% e 20%: ", Entre_Dez_Vinte)
+      Escreval("Lucro acima de 20%: ", Acima_Vinte)
+      Escreval("Valor total de compra: ", Compra_Total)
+      Escreval("Valor total de venda: ", Total_Venda)
+      Escreval("Lucro total: ", Lucro_Total)
+
+fimalgoritmo

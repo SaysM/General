@@ -1,0 +1,70 @@
+algoritmo "dados_pessoas"
+
+var
+   N, i: Inteiro
+   Altura : vetor [0..9] de Real
+   Genero : vetor [0..9] de Caractere
+   QuantM, SomaAltura, QuantF, MenorAltura, MaiorAltura, Media : Real
+   
+inicio
+      Escreva("Quantas pessoas serao digitadas? ")
+      Leia(N)
+
+      QuantF <- 0
+      QuantM <- 0
+      SomaAltura <- 0
+      MenorAltura <- 0
+      MenorAltura <- 0
+      
+      Para i de 0 ate N-1 faca
+
+           Escreva("Altura da ", (i+1), "a pessoa: ")
+           Leia(Altura[i])
+           Escreva("Genero da", (i+1), "a pessoa: ")
+           Leia(Genero[i])
+           
+            se Genero[i] = "F" entao
+
+              QuantF <- (QuantF + 1)
+              SomaAltura <- SomaAltura + Altura[i]
+
+           senao
+
+                QuantM <- (QuantM + 1)
+
+           fimse
+           
+      fimpara
+      
+      para i de 1 ate N-1 faca
+
+           Se (altura[i] < altura[i-1]) entao
+
+              MenorAltura <- altura[i]
+
+           senao
+           fimse
+
+           Se (altura[i-1] > altura[i]) entao
+
+              MaiorAltura <- altura[i-1]
+
+           senao
+           fimse
+      
+      fimpara
+      
+      Media <- SomaAltura / QuantF
+
+
+      //SAIDA DE DADOS
+      
+      Escreval("Menor altura = ", MenorAltura:4:2)
+       
+      Escreval("Maior altura = ", MaiorAltura:4:2)
+      
+      Escreval("Media das alturas das mulheres = ", (Media:4:2))
+      
+      Escreval("Numero de homens = ", QuantM)
+      
+fimalgoritmo
