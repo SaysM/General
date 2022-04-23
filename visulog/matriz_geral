@@ -1,0 +1,115 @@
+algoritmo "Matris_geral"
+
+var
+N, i, j, M, o: Inteiro
+
+Mat: vetor [0..9, 0..9] de Real
+SomaP : Real
+inicio
+
+      Escreva("Qual ordem da matriz? ")
+      Leia(N)
+      
+      Para i de 0 ate N-1 faca
+      
+           Para j de 0 ate N-1 faca
+
+                Escreva("Elemento [", i,",", j, "] : ")
+                Leia(Mat[i,j])
+                
+                se Mat[i,j] > 0 entao
+                
+                   SomaP <- SomaP + Mat[i,j]
+
+                senao
+                
+                fimse
+                
+           fimpara
+                
+      Fimpara
+      
+      Escreval()
+      
+      Escreval("Soma dos Positivos: ", SomaP)
+      
+      Escreval()
+      
+      Escreva("Escolha uma linha: ")
+      Leia(M)
+      
+      Escreval()
+      
+      Escreva("Linha escolhida: ")
+
+      para i de 0 ate N-1 faca
+
+           Escreva(Mat[M,i])
+           
+      Fimpara
+      
+      Escreval()
+      Escreval()
+      
+      Escreva("Escolha uma coluna: ")
+      Leia(o)
+
+
+      Escreva("coluna escolhida: ")
+
+      para i de 0 ate N-1 faca
+
+           Escreva(Mat[i,o])
+
+      Fimpara
+
+      Escreval()
+      Escreval()
+
+      Escreva("Diagonal escolhida")
+
+
+      para i de 0 ate N-1 faca
+      
+           Escreva(Mat[i,i])
+           
+      Fimpara
+
+      Escreval()
+
+      Para i de 0 ate N-1 faca
+
+           Para j de 0 ate N-1 faca
+           
+                Se Mat[i,j] < 0 entao
+                
+                   Mat[i,j] <- (Mat[i,j] * Mat[i,j])
+
+                senao
+                
+                Fimse
+                
+           Fimpara
+           
+      Fimpara
+      
+      Escreval()
+      Escreval()
+      
+      Escreval("Matriz Alterada:")
+      
+      Para i de 0 ate N-1 faca
+      
+           Para j de 0 ate N-1 faca
+
+                Escreva(Mat[i,j], " ")
+
+           Fimpara
+
+           Escreval()
+           
+       Fimpara
+       
+      
+      
+fimalgoritmo
