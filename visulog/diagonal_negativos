@@ -1,0 +1,42 @@
+algoritmo "diagonal_negativos"
+// Função :
+// Autor :
+// Data : 22/04/2022
+// Seção de Declarações 
+var
+
+N, i, j: inteiro
+
+Vet:vetor [0..4, 0..4]  de Real
+Cont: inteiro
+
+inicio
+
+      Escreva("Qual a ordem da matriz? ")
+      leia(N)
+      Cont <- 0
+
+      Para i de 0 ate N-1 faca
+
+           Para J de 0 ate N-1 faca
+
+                escreva("Elemento [", i, ",", j, "] : ")
+                leia(Vet[i,j])
+                
+                se (Vet[i,j] < 0) entao
+
+                   Cont <- Cont + 1
+                   
+                senao
+                fimse
+                
+           fimpara
+      fimpara
+
+     escreval("DIAGONAL PRINCIPAL: ")
+
+     Escreval(Vet[0,0], Vet[1,1], Vet[2,2])
+     
+     Escreva("QUANTIDADE DE NEGATIVOS = ", Cont)
+
+fimalgoritmo

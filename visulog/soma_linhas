@@ -1,0 +1,47 @@
+algoritmo "soma_linhas"
+
+var
+N, M, i, j: inteiro
+Mat: vetor [0..9, 0..9] de Real
+Soma1, Soma: Real
+vet: vetor [0..9] de Real
+
+inicio
+
+      Escreva("Qual a quantidade de linhas da matriz? ")
+      leia(N)
+      Escreva("Qual a quantidade de colunas da matriz? ")
+      leia(M)
+      
+      Soma <- 0
+      Soma1 <- 0
+      
+      para i de 0 ate N-1 faca
+
+           Escreval("Digite os elementos da ", i+1, "a. linha: ")
+           
+
+
+           para j de 0 ate M-1 faca
+
+                Leia(Mat[i,j])
+                
+
+           fimpara
+      Fimpara
+
+      para i de 0 ate M-1 faca
+           vet[i] <- 0
+           para j de 0 ate N-1 faca
+                vet[i] <- vet[i] + mat[i, j]
+           fimpara
+      fimpara
+
+     escreval("VETOR GERADO:")
+     
+     para i de 0 ate M-1 faca
+
+          escreval(vet[i]:3:1)
+
+     fimpara
+fimalgoritmo
