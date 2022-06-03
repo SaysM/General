@@ -32,8 +32,8 @@ inicio
        
   Fimpara
   
-  PMenor <- (cont / N) * 100
-  Amedia <- (Asoma / N)
+  PMenor <- (cont / n) * 100
+  Amedia <- (Asoma / n)
   
   Escreval()
   
