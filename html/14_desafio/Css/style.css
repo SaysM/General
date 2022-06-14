@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 0px;
+    background-color: white;
+    font-size: 25px;
+    font-family: sans-serif ;
+
+}
+.conteiner{
+    /* Compreeende todo o espaço usado*/
+    
+    width: 80%;
+    position: relative;
+    margin: 0px auto;
+    
+    background-color: lightblue;
+}
+.hero{
+    /*Compreende toda a estrutura da imagem*/
+    background-image: url(/html/14_desafio/imagens/titulo.gif);
+    height: 700px;
+    margin-top:0px;
+    
+}
+li{
+    /*Esta se referindo a como as listas esta sendo utilizada*/
+    
+    display: inline-block;
+    width: auto;
+    text-align: right;
+    margin-right: 2px;
+    margin-top: 0px;
+    font-size: 15px;
+}
+/**/
+ul{
+    /*Sobre tudo oq esta nessa lista ordenada*/
+    text-align: right;
+    margin-top: 0px;
+}
+.Links{
+    /*Sobre oque esta dentro da Lista Li*/
+    list-style: none;
+    color: white;
+}
+.hero nav a{
+    /*  Sobre oq esta nos links*/
+    text-transform: uppercase;
+    color: white;
+    
+    
+}
+.hero nav a:hover{
+    /* sobre quando passar o mouse */
+    background: rgba(33, 66, 66, 0.8); 
+} 
+.Hero-content h1{
+    /*Sobre o titulo*/
+    text-align: left;
+    padding: 0px 0px 80px 0px;
+    color: white;
+    clear: both;
+    margin-top: 100px;
+    margin-left: 80px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 40px;
+    font-size: 35px;
+}
+.content-section{
+    margin-top: 30px;
+}
+.content-section h2{
+    /*Segundo titulo*/
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content-section p{
+    box-sizing: border-box;
+    border-bottom: black;
+}
+.image{
+    width: 100%;
+}

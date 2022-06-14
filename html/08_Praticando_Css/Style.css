@@ -106,6 +106,12 @@ body .rodape{
     text-transform: uppercase;
     text-shadow: 2px 2px 4px pink;
 }
+.hero-content p{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
 .hero nav ul{
     text-align:right;
     padding: 20px 50px 0 0 ;
@@ -145,6 +151,7 @@ main{
     background-color: white;
     padding: 15px;
     margin-top: 15px;
+    overflow: auto;
 }
 
 .content-Section h1{
@@ -153,11 +160,19 @@ main{
     text-align: left;
     border-bottom: 2px solid  rgb(170, 170, 170);
     margin-top: 0px;
+    clear: both;
+
 }
 
 .card{
-    display: inline-block;
+    float:left;
     margin: 25px 60px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    margin-left: 1%;
+}
+.card img{
+    width: 100%;
 }
 
 body .rodape{
