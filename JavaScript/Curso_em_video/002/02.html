@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .alert{
+        color: withe;
+    }
+</style>
+<body>
+    <h1>Ola mundo</h1>
+    <script>
+        //todo valor de entrada com Window é considerado uma string e para substituir isso é só declarar como 'Number'
+        //Para formatar a saida alem da contenação (+) pode se usar $() mas para isso sera preciso separar com ` `
+        var larg = Number(window.prompt("Digite a largura do terreno:"));
+        var comp = Number(window.prompt("Digite o comprimento do terreno:"));
+        var metro = Number(window.prompt("Digite o valor do metro quadrado:"));
+        var AreaT = (larg * comp);
+        var Varea = (AreaT * metro);
+        window.alert(`Area do terreno =  ${AreaT}`);
+        window.alert(`Preco do terreno = ${Varea}`);
+    </script>
+</body>
+</html>
