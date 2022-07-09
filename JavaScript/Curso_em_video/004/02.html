@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        #res{
+            margin-top: 20px;
+            font-size: 20px
+        }
+    </style>
+</head>
+<body>
+    <h1>Voce é estrangeiro ou não?</h1>
+    <p>Digite sua nacionalidade <input type="text" name="txtNaci" id="txtNaci"> </p>
+    <input type="button" value="verificar" onclick="nacio()">
+    <div id="res"></div>
+    <script>
+        var Res = document.querySelector("div#res");
+        var nacio2 = document.getElementById("txtNaci");
+
+        function nacio(){
+           if(nacio2.value == "Brasileiro"){
+                Res.innerHTML = "<p>Voce é <strong>Brasileiro</strong></p>"
+                Res.innerHTML += `${nacio2.value}`
+           }else{
+                Res.innerHTML = "Voce é estrangeiro"
+                Res.innerHTML += `${nacio2.value}`
+           }
+           
+        }
+        
+   
+    </script>
+</body>
+</html>
