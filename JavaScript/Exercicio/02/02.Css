@@ -1,0 +1,41 @@
+body{
+    background-color: #DDD;
+    font-family: sans-serif;
+}
+.Conteiner{
+    background-color: gray;
+    padding: 10px;
+    width: 70%;
+    border-radius: 20px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.Title{
+    text-align: center;
+    font-size: 24px;
+}
+.Parag{
+    text-align: left;
+    font-size: 16;
+}
+.Section-Entry{
+    background-color: rgba(216, 213, 213, 0.815);
+    border-radius: 10px;
+    padding: 10px;
+}
+.BaseRet-Entry{
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+.Altret-Entry{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 30px;
+}
+#Result{
+    background-color: rgba(48, 48, 48, 0.979);
+    color: white;
+    margin-left: 20px;
+}
