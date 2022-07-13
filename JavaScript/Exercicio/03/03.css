@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(28, 28, 94);
+    font-family: sans-serif;
+}
+.Conteiner{
+    width: 80%;
+    margin: 60px auto 0px auto;
+    background-color: rgb(121, 121, 121);
+    border: 8px solid rgb(121, 121, 121);
+    border-radius: 15px;
+}
+.Question h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.Question p{
+    padding: 10px;
+}
+.Enter_data{
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+.P1erson{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    
+}
+.P1erson h2{
+    font-size: 20px;
+}
+.P2erson{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    margin-left: 50px;
+}
+.P2erson h2{
+    font-size: 20px;
+}

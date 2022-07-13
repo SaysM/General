@@ -1,0 +1,54 @@
+body{
+    font-family: sans-serif;
+    background-color: red;
+}
+.header-menu{
+    background-color: yellow;
+    
+}
+.Git, .Email, .Name, .pic{
+    display: inline-block;
+    box-sizing: border-box;
+} 
+.pic{
+    background-color: #DDD;
+}
+.Name{
+    background-color: #DDD;
+}
+.Email{
+    background-color: #DDD;
+}
+.Git{
+    background-color: #DDD;
+}
+.Main{
+    background-color: blue;
+    height: 600px;
+    width: 100%;
+}
+.Skillist{
+    width: 8%;
+    height: 100%;
+    float: left;
+}
+.Main2{
+    background-color: green;
+    width: 90%;
+    float: right;
+
+}
+.Skillist, .Main2{
+    height: 100%;
+}
+.Skillist ol{
+    padding: 0;
+    height: 150px;
+}
+.Skillist li{
+    list-style: none;
+    background-color: #DDD;
+    padding: 0%;
+    height: 100%;
+}
+
