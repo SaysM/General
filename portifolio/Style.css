@@ -1,0 +1,98 @@
+body{
+    /*
+        todo o corpo do codigo
+    */
+    background-color: rgb(112, 77, 77);
+    margin: 0 0 0 0;
+}
+.Menu{
+    /*
+        Menu principal
+    */
+    background-color:#468DB0;
+}
+.Nav{
+    /*
+        Navegação dos links
+    */
+    
+    width: 100%;
+    height: 80px;
+
+}
+.UList-nav{
+    /*
+        Lista geral
+    */
+    text-align: right;
+    margin: 0 0 0 0;
+}
+.UList-nav li{
+    /*
+        Lista de links
+    */
+    background-color: #468DB0;
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    margin-top: 24px;
+    margin-left: 10px;
+}
+.UList-nav li a{
+    text-decoration: none;
+    color: #AAD2F0;
+}
+.Sub-Menu{
+    /*
+        Conteiner com todas as partes do Sub-Menu
+    */
+    
+    height: 600px;
+    
+}
+.Sub-Nav ul{
+    /*
+        Navegação de exercicios
+    */
+    background-color: #60C0F0;
+    list-style: none;
+    margin: 0 0 0 0 ;
+    height: 100%;
+
+}
+.Sub-Nav ul{
+    padding-left: 0px;
+}
+.Skill-list ol{
+    /*
+        Listas em tentativa
+    */
+    
+    display: none;
+}
+.Skill-list:hover ol{
+    /*
+        Quando passar o mouse por cima
+    */
+    list-style: none;
+    display: block;
+}
+.Skill-list ol a{
+    text-decoration: none;
+}
+
+.Sub-Nav {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    float:left
+}
+.Apre{
+    background-color: #285063;
+    width: 80%;
+    height: 100%;
+    margin: 0 0 0 0;
+    float: right;
+}
+.Apre p{
+    margin: 0 0 0 0;
+}
